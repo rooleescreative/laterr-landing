@@ -156,28 +156,28 @@ export default function LandingPage() {
     <div className="bg-background min-h-screen relative overflow-x-hidden">
       {/* Header - Fixed, transforms on scroll */}
       <header
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`fixed left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
-            ? 'top-4 left-1/2 -translate-x-1/2 w-[600px] max-w-[calc(100%-32px)] bg-white rounded-full shadow-lg pl-6 pr-4 py-4'
-            : 'w-full px-8 lg:px-16 py-6 bg-transparent'
+            ? 'top-0 md:top-4 left-0 md:left-1/2 md:-translate-x-1/2 w-full md:w-[600px] md:max-w-[calc(100%-32px)] bg-white md:rounded-full shadow-lg px-4 md:pl-6 md:pr-4 py-3 md:py-4'
+            : 'top-0 w-full px-4 md:px-8 lg:px-16 py-4 md:py-6 bg-background'
         }`}
       >
         <div className={`flex items-center justify-between ${scrolled ? '' : 'max-w-7xl mx-auto'}`}>
           <img
             src="/images/LaterrLogo.svg"
             alt="Laterr"
-            className={`transition-all duration-300 ${scrolled ? 'h-7' : 'h-9'}`}
+            className={`transition-all duration-300 ${scrolled ? 'h-6 md:h-7' : 'h-7 md:h-9'}`}
           />
-          <nav className="flex items-center gap-6">
+          <nav className="flex items-center gap-4 md:gap-6">
             <a
               href="https://app.laterr.news/auth/login"
-              className="font-inter text-black text-base hover:opacity-70 transition-opacity"
+              className="hidden md:block font-inter text-black text-base hover:opacity-70 transition-opacity"
             >
               Log in
             </a>
             <a
               href="https://app.laterr.news/auth/login"
-              className="inline-flex items-center gap-2.5 px-4 py-3 bg-primary hover:bg-primary-hover rounded-full text-white text-base transition-colors"
+              className="inline-flex items-center gap-2.5 px-4 py-2.5 md:py-3 bg-primary hover:bg-primary-hover rounded-full text-white text-sm md:text-base transition-colors"
             >
               Inizia gratis
             </a>
@@ -186,7 +186,7 @@ export default function LandingPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative pt-32 lg:pt-40 pb-20 px-4">
+      <section className="relative pt-28 md:pt-32 lg:pt-40 pb-16 md:pb-20 px-4">
         <div className="max-w-4xl mx-auto text-center relative">
           {/* Floating Cards */}
           {floatingCards.map((card) => (
@@ -225,8 +225,8 @@ export default function LandingPage() {
       </section>
 
       {/* Product Preview Section */}
-      <section className="py-20 px-4">
-        <div className="max-w-[1200px] mx-auto">
+      <section className="py-6 md:py-10 px-0 md:px-4">
+        <div className="max-w-[1300px] mx-auto">
           {/* Desktop */}
           <img
             src="/images/ProductPreview_D.png"
@@ -237,7 +237,7 @@ export default function LandingPage() {
           <img
             src="/images/ProductPreview_M.png"
             alt="Laterr - Salva articoli con l'estensione, leggi i riassunti nell'app, ricevi il digest via email"
-            className="block md:hidden w-full scroll-animate"
+            className="block md:hidden w-[110%] max-w-none -ml-[5%] scroll-animate"
           />
         </div>
       </section>
