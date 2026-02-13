@@ -176,7 +176,7 @@ export default function LandingPage() {
               Log in
             </a>
             <a
-              href="https://app.laterr.news/auth/signup"
+              href="https://app.laterr.news/auth/login"
               className="inline-flex items-center gap-2.5 px-4 py-3 bg-primary hover:bg-primary-hover rounded-full text-white text-base transition-colors"
             >
               Inizia gratis
@@ -213,7 +213,7 @@ export default function LandingPage() {
           {/* CTA Button */}
           <div className="flex flex-col items-center gap-2">
             <a
-              href="https://app.laterr.news/auth/signup"
+              href="https://app.laterr.news/auth/login"
               className="inline-flex items-center gap-2.5 px-6 py-5 bg-primary hover:bg-primary-hover rounded-full text-white font-semibold text-base transition-colors"
             >
               Inizia subito gratis
@@ -364,7 +364,7 @@ export default function LandingPage() {
 
             <div className="flex flex-col items-center gap-3">
               <a
-                href="https://app.laterr.news/auth/signup"
+                href="https://app.laterr.news/auth/login"
                 className="w-full flex items-center justify-center gap-2.5 px-6 py-5 bg-primary hover:bg-primary-hover rounded-full text-white font-semibold text-base transition-colors"
               >
                 Prova gratis 14 giorni
