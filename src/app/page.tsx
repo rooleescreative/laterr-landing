@@ -117,11 +117,6 @@ export default function LandingPage() {
             className={`transition-all duration-300 ${scrolled ? 'h-6 md:h-7' : 'h-7 md:h-9'}`}
           />
           <nav className="flex items-center gap-4 md:gap-6">
-            {!scrolled && (
-              <div className="hidden md:block">
-                <LanguageSelector />
-              </div>
-            )}
             <a
               href="https://app.laterr.news/auth/login"
               className="hidden md:block font-inter text-black text-base hover:opacity-70 transition-opacity"
@@ -140,7 +135,7 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <section className="relative pt-28 md:pt-32 lg:pt-40 pb-16 md:pb-20 px-4">
-        <div className="max-w-4xl mx-auto text-center relative">
+        <div className="max-w-[66rem] mx-auto text-center relative">
           {/* Floating Cards */}
           {floatingCards.map((card) => (
             <div
@@ -175,10 +170,6 @@ export default function LandingPage() {
             <p className="text-muted text-xs">{t('hero.trial')}</p>
           </div>
 
-          {/* Mobile language selector */}
-          <div className="md:hidden mt-6">
-            <LanguageSelector />
-          </div>
         </div>
       </section>
 
@@ -348,6 +339,8 @@ export default function LandingPage() {
             <a href="https://app.laterr.news/privacy" className="hover:text-black transition-colors">{t('footer.privacy')}</a>
             <span className="w-1 h-1 bg-muted rounded-full"></span>
             <a href="https://app.laterr.news/terms" className="hover:text-black transition-colors">{t('footer.terms')}</a>
+            <span className="w-1 h-1 bg-muted rounded-full"></span>
+            <LanguageSelector />
           </nav>
         </div>
       </footer>
