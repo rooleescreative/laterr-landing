@@ -339,8 +339,9 @@ export default function LandingPage() {
             <a href="https://app.laterr.news/privacy" className="hover:text-black transition-colors">{t('footer.privacy')}</a>
             <span className="w-1 h-1 bg-muted rounded-full"></span>
             <a href="https://app.laterr.news/terms" className="hover:text-black transition-colors">{t('footer.terms')}</a>
-            <span className="w-1 h-1 bg-muted rounded-full"></span>
-            <LanguageSelector />
+            <div className="pl-6">
+              <LanguageSelector />
+            </div>
           </nav>
         </div>
       </footer>
