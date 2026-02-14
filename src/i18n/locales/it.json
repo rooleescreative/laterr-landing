@@ -1,0 +1,58 @@
+{
+  "header": {
+    "login": "Log in",
+    "cta": "Inizia gratis"
+  },
+  "hero": {
+    "title1": "Salva articoli.",
+    "title2": "Leggi i riassunti.",
+    "description": "L'app read-it-later che ti manda ogni sera un digest con i summary AI degli articoli che hai salvato. Così sai cosa c'è dentro - senza leggere tutto.",
+    "cta": "Inizia subito gratis",
+    "trial": "14 giorni free trial. Poi €12,99/anno"
+  },
+  "stats": {
+    "sectionTitle": "Salvi articoli che poi non leggi mai?",
+    "articles": { "number": "47", "description": "Articoli salvati \"per dopo\"" },
+    "after": { "number": "\"Dopo\"", "description": "Che non arriva mai" },
+    "summaries": { "number": "0", "description": "Articoli effettivamente letti" }
+  },
+  "howItWorks": {
+    "title": "Come funziona",
+    "steps": [
+      { "title": "Salva l'articolo", "description": "Clicca l'estensione mentre leggi. Funziona anche con Medium e Substack a pagamento." },
+      { "title": "Laterr riassume", "description": "L'AI legge l'articolo e crea un summary con i 3-5 punti chiave. In 30 secondi." },
+      { "title": "Ricevi il digest", "description": "Ogni sera, una email con i riassunti di tutto ciò che hai salvato oggi." },
+      { "title": "Leggi (davvero)", "description": "Dopo il summary, decidi cosa vale la pena leggere per intero." }
+    ]
+  },
+  "features": {
+    "title": "Non è l'ennesima app di bookmark",
+    "items": [
+      { "title": "Funziona con articoli a pagamento", "description": "Se tu puoi leggerlo, noi possiamo salvarlo. L'estensione cattura il contenuto mentre sei sulla pagina." },
+      { "title": "Summary AI in 30 secondi", "description": "3-5 punti chiave per ogni articolo. Sai subito di cosa parla, senza leggere tutto." },
+      { "title": "Digest serale via email", "description": "Non devi aprire un'altra app. Arriva tutto nella tua inbox, quando hai tempo." },
+      { "title": "Reader mode pulito", "description": "Quando vuoi leggere l'articolo completo: zero ads, zero distrazioni, solo il testo." },
+      { "title": "Privacy-first", "description": "I tuoi articoli sono tuoi. Non tracciamo, non vendiamo, non condividiamo." },
+      { "title": "Funziona ovunque", "description": "Medium, Substack, New York Times, blog, qualsiasi sito web. Se ha testo, lo salviamo." }
+    ]
+  },
+  "pricing": {
+    "label": "PREZZO",
+    "title": "Semplice come deve essere",
+    "subtitle": "Un prezzo solo. Tutto incluso. Per sempre.",
+    "price": "€ 12,99",
+    "period": "/ anno",
+    "tagline": "1 caffè al mese",
+    "cta": "Prova gratis 14 giorni",
+    "noCreditCard": "Nessuna carta di credito richiesta per iniziare",
+    "features": [
+      "Salvataggi illimitati",
+      "Summary AI per ogni articolo",
+      "Digest giornaliero via email",
+      "Reader mode senza distrazioni",
+      "Estensione Chrome",
+      "Supporto prioritario"
+    ]
+  },
+  "footer": { "privacy": "Privacy", "terms": "Terms" }
+}

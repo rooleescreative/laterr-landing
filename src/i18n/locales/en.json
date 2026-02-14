@@ -1,0 +1,58 @@
+{
+  "header": {
+    "login": "Log in",
+    "cta": "Start for free"
+  },
+  "hero": {
+    "title1": "Save articles.",
+    "title2": "Read the summaries.",
+    "description": "The read-it-later app that sends you a daily digest with AI summaries of the articles you saved. So you know what's inside — without reading everything.",
+    "cta": "Start for free now",
+    "trial": "14-day free trial. Then €12.99/year"
+  },
+  "stats": {
+    "sectionTitle": "Saving articles you never actually read?",
+    "articles": { "number": "47", "description": "Articles saved \"for later\"" },
+    "after": { "number": "\"Later\"", "description": "That never comes" },
+    "summaries": { "number": "0", "description": "Articles actually read" }
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "steps": [
+      { "title": "Save the article", "description": "Click the extension while reading. Works with Medium and Substack paywalled content too." },
+      { "title": "Laterr summarizes", "description": "AI reads the article and creates a 3-5 key point summary. In 30 seconds." },
+      { "title": "Get the digest", "description": "Every evening, an email with summaries of everything you saved today." },
+      { "title": "Read (for real)", "description": "After the summary, decide what's actually worth reading in full." }
+    ]
+  },
+  "features": {
+    "title": "Not just another bookmark app",
+    "items": [
+      { "title": "Works with paywalled articles", "description": "If you can read it, we can save it. The extension captures content while you're on the page." },
+      { "title": "AI summary in 30 seconds", "description": "3-5 key points per article. Know what it's about instantly, without reading everything." },
+      { "title": "Evening email digest", "description": "No need to open another app. Everything arrives in your inbox, when you have time." },
+      { "title": "Clean reader mode", "description": "When you want to read the full article: zero ads, zero distractions, just the text." },
+      { "title": "Privacy-first", "description": "Your articles are yours. We don't track, sell, or share." },
+      { "title": "Works everywhere", "description": "Medium, Substack, New York Times, blogs, any website. If it has text, we save it." }
+    ]
+  },
+  "pricing": {
+    "label": "PRICING",
+    "title": "Simple as it should be",
+    "subtitle": "One price. Everything included. Forever.",
+    "price": "€12.99",
+    "period": "/ year",
+    "tagline": "1 coffee per month",
+    "cta": "Try free for 14 days",
+    "noCreditCard": "No credit card required to start",
+    "features": [
+      "Unlimited saves",
+      "AI summary for every article",
+      "Daily email digest",
+      "Distraction-free reader mode",
+      "Chrome extension",
+      "Priority support"
+    ]
+  },
+  "footer": { "privacy": "Privacy", "terms": "Terms" }
+}

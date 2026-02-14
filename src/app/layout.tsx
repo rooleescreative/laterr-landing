@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { I18nProvider } from '@/i18n'
 
 export const metadata: Metadata = {
   title: 'Laterr - Salva articoli. Leggi i riassunti.',
@@ -21,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it">
-      <body>{children}</body>
+      <body>
+        <I18nProvider>{children}</I18nProvider>
+      </body>
     </html>
   )
 }
