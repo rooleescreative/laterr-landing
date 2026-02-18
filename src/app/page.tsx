@@ -43,9 +43,20 @@ const featureIcons = [
   "/images/earth-1.svg",
 ]
 
+/** Returns localized image path. IT = default, EN/ES = suffixed */
+function getLocalizedImage(baseName: string, locale: string): string {
+  if (locale === 'it' || !locale) return `/images/${baseName}.png`
+  return `/images/${baseName}_${locale}.png`
+}
+
 export default function LandingPage() {
   const [scrolled, setScrolled] = useState(false)
-  const { t, tArray } = useTranslation()
+  const { t, tArray, locale } = useTranslation()
+
+  // Dynamic page title
+  useEffect(() => {
+    document.title = t('pageTitle')
+  }, [locale, t])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -178,13 +189,13 @@ export default function LandingPage() {
         <div className="max-w-[1300px] mx-auto">
           {/* Desktop */}
           <img
-            src="/images/ProductPreview_D.png"
+            src={getLocalizedImage('ProductPreview_D', locale)}
             alt="Laterr product preview"
             className="hidden md:block w-full scroll-animate"
           />
           {/* Mobile */}
           <img
-            src="/images/ProductPreview_M.png"
+            src={getLocalizedImage('ProductPreview_M', locale)}
             alt="Laterr product preview"
             className="block md:hidden w-[110%] max-w-none -ml-[5%] scroll-animate"
           />

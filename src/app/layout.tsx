@@ -3,11 +3,18 @@ import './globals.css'
 import { I18nProvider } from '@/i18n'
 
 export const metadata: Metadata = {
-  title: 'Laterr - Salva articoli. Leggi i riassunti.',
-  description: "L'app read-it-later che ti manda ogni sera un digest con i summary AI degli articoli che hai salvato.",
+  title: 'Laterr — Save articles. Read summaries.',
+  description: 'The read-it-later app that sends you a daily digest with AI summaries of the articles you saved.',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '32x32' },
+      { url: '/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+    ],
+    apple: '/apple-touch-icon.png',
+  },
   openGraph: {
-    title: 'Laterr - Salva articoli. Leggi i riassunti.',
-    description: "L'app read-it-later che ti manda ogni sera un digest con i summary AI degli articoli che hai salvato.",
+    title: 'Laterr — Save articles. Read summaries.',
+    description: 'The read-it-later app that sends you a daily digest with AI summaries of the articles you saved.',
     url: 'https://laterr.news',
     siteName: 'Laterr',
     locale: 'it_IT',
