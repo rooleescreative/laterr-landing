@@ -97,5 +97,12 @@
     "privacy": "Privacy",
     "terms": "Terms"
   },
+  "cookieBanner": {
+    "text": "This site uses analytics cookies (Google Analytics) to improve the service. Analytics cookies are only activated with your consent.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "privacyLink": "Privacy policy",
+    "cookieSettings": "Cookie settings"
+  },
   "pageTitle": "Laterr — Save articles. Read summaries."
 }

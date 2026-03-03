@@ -97,5 +97,12 @@
     "privacy": "Privacy",
     "terms": "Terms"
   },
+  "cookieBanner": {
+    "text": "Questo sito utilizza cookie di analisi (Google Analytics) per migliorare il servizio. I cookie di analisi vengono attivati solo con il tuo consenso.",
+    "accept": "Accetta",
+    "reject": "Rifiuta",
+    "privacyLink": "Informativa privacy",
+    "cookieSettings": "Impostazioni cookie"
+  },
   "pageTitle": "Laterr — Salva articoli. Leggi i riassunti."
 }

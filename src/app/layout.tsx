@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { I18nProvider } from '@/i18n'
+import { CookieBanner } from '@/components/CookieBanner'
+import { GoogleAnalytics } from '@/components/GoogleAnalytics'
 
 export const metadata: Metadata = {
   title: 'Laterr — Save articles. Read summaries.',
@@ -31,6 +33,8 @@ export default function RootLayout({
     <html lang="it">
       <body>
         <I18nProvider>{children}</I18nProvider>
+        <GoogleAnalytics />
+        <CookieBanner />
       </body>
     </html>
   )
