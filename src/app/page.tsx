@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useTranslation } from '@/i18n'
 import { LanguageSelector } from '@/components/LanguageSelector'
+import { resetCookieConsent } from '@/components/CookieBanner'
 
 // Floating card data (decorative, not translated)
 const floatingCards = [
@@ -109,7 +110,6 @@ export default function LandingPage() {
 
   const steps = tArray('howItWorks.steps')
   const featureItems = tArray('features.items')
-  const pricingFeatures = tArray('pricing.features')
 
   return (
     <div className="bg-background min-h-screen relative overflow-x-hidden">
@@ -292,47 +292,74 @@ export default function LandingPage() {
 
       {/* Pricing Section */}
       <section className="py-24 px-4 bg-white">
-        <div className="max-w-xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <div className="scroll-animate text-center mb-16">
-            <p className="font-inter font-bold text-xs tracking-[4px] text-black mb-2">{t('pricing.label')}</p>
             <h2 className="font-instrument text-4xl md:text-5xl lg:text-6xl text-black mb-2">
-              {t('pricing.title')}
+              {t('landing.pricingTitle')}
             </h2>
             <p className="font-inter text-base text-black">
-              {t('pricing.subtitle')}
+              {t('landing.pricingSubtitle')}
             </p>
           </div>
 
-          <div className="scroll-animate stagger-1 bg-white rounded-2xl border-[5px] border-primary p-8 shadow-lg max-w-[400px] mx-auto">
-            <div className="flex items-center justify-center gap-2 mb-2">
-              <span className="font-bricolage font-bold text-6xl md:text-7xl text-black">{t('pricing.price')}</span>
-              <span className="font-bricolage font-bold text-sm text-black">{t('pricing.period')}</span>
-            </div>
-            <div className="flex items-center justify-center gap-1 mb-8">
-              <span className="font-inter text-xs text-black">{t('pricing.tagline')}</span>
-              <img src="/images/coffee-1.svg" alt="" className="w-3 h-3" />
+          <div className="flex flex-col md:flex-row gap-6">
+            {/* Card FREE */}
+            <div className="scroll-animate stagger-1 flex-1 bg-white rounded-2xl border border-[#EAE4DD] p-8">
+              <span className="inline-block bg-[#C8DFD7] text-black uppercase font-semibold text-xs px-3 py-1 rounded-full mb-4">
+                {t('landing.freeChip')}
+              </span>
+              <div className="flex items-baseline gap-2 mb-1">
+                <span className="font-bricolage font-bold text-5xl text-black">{t('landing.freePrice')}</span>
+                <span className="font-bricolage font-bold text-sm text-black">{t('landing.freePricePeriod')}</span>
+              </div>
+              <p className="font-inter text-xs text-muted mb-8">{t('landing.freeTagline')}</p>
+
+              <ul className="space-y-3 mb-8">
+                {[t('landing.freeFeature1'), t('landing.freeFeature2'), t('landing.freeFeature3'), t('landing.freeFeature4')].map((feature, index) => (
+                  <li key={index} className="flex items-center gap-4 pb-3 border-b border-[#EAE4DD] last:border-0">
+                    <img src="/images/circle-check-1-2.svg" alt="" className="w-6 h-6" />
+                    <span className="font-inter text-xs text-black">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="https://app.laterr.news/auth/login"
+                className="w-full flex items-center justify-center gap-2.5 px-6 py-5 border-2 border-primary rounded-full text-primary font-semibold text-base hover:bg-primary hover:text-white transition-colors"
+              >
+                {t('landing.freeCta')}
+              </a>
             </div>
 
-            <ul className="space-y-3 mb-8">
-              {pricingFeatures.map((feature: string, index: number) => (
-                <li key={index} className="flex items-center gap-4 pb-3 border-b border-muted last:border-0">
-                  <img src="/images/circle-check-1-2.svg" alt="" className="w-6 h-6" />
-                  <span className="font-inter text-xs text-black">{feature}</span>
-                </li>
-              ))}
-            </ul>
+            {/* Card PRO */}
+            <div className="scroll-animate stagger-2 flex-1 bg-white rounded-2xl border-2 border-[#FF5924] p-8">
+              <span className="inline-block bg-[#FF5924] text-white uppercase font-semibold text-xs px-3 py-1 rounded-full mb-4">
+                {t('landing.proChip')}
+              </span>
+              <div className="flex items-baseline gap-2 mb-1">
+                <span className="font-bricolage font-bold text-5xl text-black">{t('landing.proPrice')}</span>
+                <span className="font-bricolage font-bold text-sm text-black">{t('landing.proPricePeriod')}</span>
+              </div>
+              <div className="flex items-center gap-1 mb-8">
+                <span className="font-inter text-xs text-black">{t('landing.proTagline')}</span>
+                <img src="/images/coffee-1.svg" alt="" className="w-3 h-3" />
+              </div>
 
-            <div className="flex flex-col items-center gap-3">
+              <ul className="space-y-3 mb-8">
+                {[t('landing.proFeature1'), t('landing.proFeature2'), t('landing.proFeature3'), t('landing.proFeature4'), t('landing.proFeature5')].map((feature, index) => (
+                  <li key={index} className="flex items-center gap-4 pb-3 border-b border-[#EAE4DD] last:border-0">
+                    <img src="/images/circle-check-1-2.svg" alt="" className="w-6 h-6" />
+                    <span className="font-inter text-xs text-black">{feature}</span>
+                  </li>
+                ))}
+              </ul>
+
               <a
                 href="https://app.laterr.news/auth/login"
                 className="w-full flex items-center justify-center gap-2.5 px-6 py-5 bg-primary hover:bg-primary-hover rounded-full text-white font-semibold text-base transition-colors"
               >
-                {t('pricing.cta')}
-                <img src="/images/Arrow-1.svg" alt="" className="w-8 h-3" />
+                {t('landing.proCta')}
               </a>
-              <p className="font-inter text-xs text-muted text-center">
-                {t('pricing.noCreditCard')}
-              </p>
             </div>
           </div>
         </div>
@@ -350,6 +377,9 @@ export default function LandingPage() {
             <a href="https://app.laterr.news/privacy" className="hover:text-black transition-colors">{t('footer.privacy')}</a>
             <span className="w-1 h-1 bg-muted rounded-full"></span>
             <a href="https://app.laterr.news/terms" className="hover:text-black transition-colors">{t('footer.terms')}</a>
+            <button onClick={resetCookieConsent} style={{ background:'none', border:'none', color:'#827365', fontSize:'13px', cursor:'pointer', textDecoration:'underline' }}>
+              {t('cookieBanner.cookieSettings')}
+            </button>
             <div className="pl-6">
               <LanguageSelector />
             </div>
