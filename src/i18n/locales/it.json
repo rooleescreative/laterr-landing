@@ -93,6 +93,29 @@
       "Supporto prioritario"
     ]
   },
+  "landing": {
+    "pricingTitle": "Gratis per tutti, Pro per i mind feeder",
+    "pricingSubtitle": "Inizia gratis. Passa a Pro quando vuoi sbloccare tutto.",
+    "freeChip": "FREE",
+    "proChip": "PRO",
+    "freePrice": "€0",
+    "freePricePeriod": "per sempre",
+    "freeTagline": "Nessuna carta di credito",
+    "proPrice": "€11,99",
+    "proPricePeriod": "/ anno",
+    "proTagline": "Meno di un caffè al mese",
+    "freeFeature1": "20 articoli salvati",
+    "freeFeature2": "5 riassunti AI al mese",
+    "freeFeature3": "Estensione Chrome e Safari",
+    "freeFeature4": "Salvataggio via email",
+    "freeCta": "Inizia gratis →",
+    "proFeature1": "Salvataggi illimitati",
+    "proFeature2": "Summary AI per ogni articolo",
+    "proFeature3": "Digest giornaliero via email",
+    "proFeature4": "Estensione Chrome e Safari",
+    "proFeature5": "Supporto prioritario",
+    "proCta": "Abbonati ora →"
+  },
   "footer": {
     "privacy": "Privacy",
     "terms": "Terms"

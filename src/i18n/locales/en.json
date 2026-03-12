@@ -93,6 +93,29 @@
       "Priority support"
     ]
   },
+  "landing": {
+    "pricingTitle": "Free for everyone, Pro for mind feeders",
+    "pricingSubtitle": "Start free. Upgrade to Pro when you're ready to unlock everything.",
+    "freeChip": "FREE",
+    "proChip": "PRO",
+    "freePrice": "€0",
+    "freePricePeriod": "forever",
+    "freeTagline": "No credit card needed",
+    "proPrice": "€11.99",
+    "proPricePeriod": "/ year",
+    "proTagline": "Less than a coffee a month",
+    "freeFeature1": "20 saved articles",
+    "freeFeature2": "5 AI summaries per month",
+    "freeFeature3": "Chrome & Safari extension",
+    "freeFeature4": "Save via email",
+    "freeCta": "Start for free →",
+    "proFeature1": "Unlimited saves",
+    "proFeature2": "AI summary for every article",
+    "proFeature3": "Daily email digest",
+    "proFeature4": "Chrome & Safari extension",
+    "proFeature5": "Priority support",
+    "proCta": "Subscribe now →"
+  },
   "footer": {
     "privacy": "Privacy",
     "terms": "Terms"
