@@ -305,7 +305,7 @@ export default function LandingPage() {
           <div className="flex flex-col md:flex-row gap-6">
             {/* Card FREE */}
             <div className="scroll-animate stagger-1 flex-1 flex flex-col bg-white rounded-2xl border border-[#EAE4DD] p-8">
-              <span className="inline-block bg-[#C8DFD7] text-black uppercase font-semibold text-xs px-3 py-1 rounded-full mb-4">
+              <span className="inline-block self-start bg-[#C8DFD7] text-black uppercase font-semibold text-xs px-3 py-1 rounded-full mb-4">
                 {t('landing.freeChip')}
               </span>
               <div className="flex items-baseline gap-2 mb-1">
@@ -333,7 +333,7 @@ export default function LandingPage() {
 
             {/* Card PRO */}
             <div className="scroll-animate stagger-2 flex-1 flex flex-col bg-white rounded-2xl border-2 border-[#FF5924] p-8">
-              <span className="inline-block bg-[#FF5924] text-white uppercase font-semibold text-xs px-3 py-1 rounded-full mb-4">
+              <span className="inline-block self-start bg-[#FF5924] text-white uppercase font-semibold text-xs px-3 py-1 rounded-full mb-4">
                 {t('landing.proChip')}
               </span>
               <div className="flex items-baseline gap-2 mb-1">
