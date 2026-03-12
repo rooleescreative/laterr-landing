@@ -304,7 +304,7 @@ export default function LandingPage() {
 
           <div className="flex flex-col md:flex-row gap-6">
             {/* Card FREE */}
-            <div className="scroll-animate stagger-1 flex-1 bg-white rounded-2xl border border-[#EAE4DD] p-8">
+            <div className="scroll-animate stagger-1 flex-1 flex flex-col bg-white rounded-2xl border border-[#EAE4DD] p-8">
               <span className="inline-block bg-[#C8DFD7] text-black uppercase font-semibold text-xs px-3 py-1 rounded-full mb-4">
                 {t('landing.freeChip')}
               </span>
@@ -325,14 +325,14 @@ export default function LandingPage() {
 
               <a
                 href="https://app.laterr.news/auth/login"
-                className="w-full flex items-center justify-center gap-2.5 px-6 py-5 border-2 border-primary rounded-full text-primary font-semibold text-base hover:bg-primary hover:text-white transition-colors"
+                className="mt-auto w-full flex items-center justify-center gap-2.5 px-6 py-5 border-2 border-primary rounded-full text-primary font-semibold text-base hover:bg-primary hover:text-white transition-colors"
               >
                 {t('landing.freeCta')}
               </a>
             </div>
 
             {/* Card PRO */}
-            <div className="scroll-animate stagger-2 flex-1 bg-white rounded-2xl border-2 border-[#FF5924] p-8">
+            <div className="scroll-animate stagger-2 flex-1 flex flex-col bg-white rounded-2xl border-2 border-[#FF5924] p-8">
               <span className="inline-block bg-[#FF5924] text-white uppercase font-semibold text-xs px-3 py-1 rounded-full mb-4">
                 {t('landing.proChip')}
               </span>
@@ -356,7 +356,7 @@ export default function LandingPage() {
 
               <a
                 href="https://app.laterr.news/auth/login"
-                className="w-full flex items-center justify-center gap-2.5 px-6 py-5 bg-primary hover:bg-primary-hover rounded-full text-white font-semibold text-base transition-colors"
+                className="mt-auto w-full flex items-center justify-center gap-2.5 px-6 py-5 bg-primary hover:bg-primary-hover rounded-full text-white font-semibold text-base transition-colors"
               >
                 {t('landing.proCta')}
               </a>
